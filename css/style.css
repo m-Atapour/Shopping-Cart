@@ -1,0 +1,193 @@
+           * {
+               font-family: 'b koodak';
+           }
+
+           body {
+               overflow: hidden;
+           }
+
+           nav {
+               width: 95%;
+               margin: auto;
+               display: flex;
+               justify-content: space-between;
+               padding-top: 10px;
+           }
+
+           .shopping_card img {
+               width: 25px;
+           }
+
+           #quantity {
+               position: absolute;
+               background-color: red;
+               width: 15px;
+               height: 15px;
+               border-radius: 50%;
+               color: white;
+               text-align: center;
+               top: 10px;
+               margin-right: -10px;
+               line-height: 15px;
+           }
+
+           header {
+               background-color: lightblue;
+               border-radius: 5px;
+               margin-bottom: 15px;
+
+           }
+
+           .products {
+               display: flex;
+               gap: 5px;
+               font-family: 'b koodak';
+
+           }
+
+           h3,
+           p {
+               margin: 0px;
+           }
+
+           .product {
+               width: 150px;
+               /*height: 100%;*/
+               height: 300px;
+               background-color: lightblue;
+               border-radius: 10px 10px 0 0;
+               text-align: center;
+               position: relative;
+
+           }
+
+           .product img {
+               width: 148px;
+               margin: 1px;
+               border-radius: 10px 10px 0 0;
+               background-color: black;
+           }
+
+           .product .productName {
+               font-family: 'b titr';
+
+           }
+
+           /*         .product .productDescription{
+        }
+        .product .productPrice{
+        } */
+           .product .btnAdd {
+               font-family: b yekan;
+               font-size: 1rem;
+               width: 100%;
+               height: 30px;
+               border-radius: 0 0 10px 10px;
+               position: absolute;
+               bottom: -30px;
+               right: 0px;
+               background-color: gold;
+               text-decoration: none;
+           }
+
+           .btnAddv:hover {
+
+               background-color: green;
+           }
+
+           .basket {
+
+               background-color: rgb(241, 245, 243);
+               height: 100vh;
+               width: 500px;
+               position: absolute;
+               top: 0;
+               left: -500px;
+               z-index: 2;
+               box-shadow: 0px 1px 5px lightgray;
+
+           }
+
+           .basketTransitionOpen {
+               transition-property: all;
+               transition-duration: 1s;
+               left: 0px;
+               position: absolute;
+           }
+
+           #close {
+               display: inline-block;
+               margin: 5px;
+           }
+
+           .basketTransitionClose {
+               transition-property: all;
+               transition-duration: 1s;
+               left: -500px;
+               position: absolute;
+
+           }
+
+           .basket table {
+               width: 100%;
+               border-collapse: collapse;
+           }
+
+           .basket table th:nth-child(1) {
+               width: 100px;
+               border-radius: 10px;
+           }
+
+           .basket table th:nth-child(2) {
+               width: 100px;
+               text-align: center;
+           }
+
+           .basket tbody tr {
+               height: 80px;
+               text-align: center;
+           }
+
+           .basket tbody tr:nth-child(even) {
+               background-color: lightskyblue;
+           }
+
+           .basket_footer {
+               background-color: blue;
+               position: absolute;
+               bottom: 0;
+               width: 100%;
+           }
+
+           .basket_footer>div {
+               width: 49%;
+               display: inline-block;
+               color: white;
+               height: 50px;
+           }
+
+           .basket_footer>button {
+               width: 100%;
+           }
+
+           #backetTable thead tr:first-child {
+               border-bottom: 1px solid lightgray;
+           }
+
+           #backetTable tr button {
+               width: 25px;
+               border: none;
+               border-radius: 5px;
+           }
+
+           .product_holder {
+               border: 1px solid lightgray;
+               border-radius: 10px;
+
+           }
+
+           .product_holder img {
+               width: 50px;
+               display: block;
+               margin: auto
+           }

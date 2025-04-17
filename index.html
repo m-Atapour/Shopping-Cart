@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروژه سبد خرید</title>
+    <link type="text/css" rel="styleSheet" href="css/style.css" />
+    <script src="js/main.js"></script>
+</head>
+
+<body dir="rtl">
+    <div class="basket" id="basket">
+        <a href="#" id="close" onclick="hideBasket()"><img src="images/close.svg" /></a>
+        <table id="backetTable">
+            <thead>
+                <tr>
+                    <th>ردیف</th>
+                    <th>نام</th>
+                    <th>تعداد</th>
+                    <th>قیمت</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+            <tbody id="tableRows">
+
+            </tbody>
+
+        </table>
+        <div class="basket_footer">
+            <div><span>تعداد اقلام:</span><span id="totalNum"></span></div>
+            <div><span>قابل پرداخت:</span><span id="totalPrice"></span></div>
+        <button>پرداخت</button>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <div class="user_info"> کیانا جهان بین</div>
+            <a href="#" onclick="showBasket()">
+                <div class="shopping_card">
+                    <span><img src="images/basket.png" /></span>
+                    <div id="quantity">0</div>
+                </div>
+            </a>
+        </nav>
+    </header>
+    <div class="basket" id="basket">
+        <div id="close" onclick="hideBasket()">X</div>
+        <table id="backetTable">
+            <thead>
+                <tr>
+                    <th>ردیف</th>
+                    <th>نام</th>
+                    <th>تعداد</th>
+                    <th>قیمت</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+            <tbody id="tableRows">
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>تعداد اقلام:</td>
+                    <td id="totalNum" colspan="4"> </td>
+                </tr>
+                <tr>
+                    <td>قابل پرداخت:</td>
+                    <td id="totalPrice" colspan="4"> </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div class="products">
+        <div id="product1" class="product">
+            <img src="images/shir.jpg" />
+            <h3 class="productName">شیر</h3>
+            <p class="productDescription">شیر نیم شرب .51 لیتری</p>
+            <span class="productPrice">25000 </span>تومان
+            <a href="#" class="btnAdd" onclick="addItem('product1')">افزودن به سبد</a>
+        </div>
+        <div id="product2" class="product">
+            <img src="images/mast.webp" />
+
+            <h3 class="productName">ماست</h3>
+            <p class="productDescription">
+                ماست تازه پرچرب پروبیوتیک 1800 گرمی هراز</p>
+            <span class="productPrice">55000 </span>تومان
+            <a href="#" class="btnAdd" onclick="addItem('product2')">افزودن به سبد</a>
+        </div>
+        <div id="product3" class="product">
+            <img src="images/kare.webp" />
+
+            <h3 class="productName">کره</h3>
+            <p class="productDescription"> کره 250 گرمی پگاه</p>
+            <span class="productPrice">35000 </span>تومان
+            <a href="#" class="btnAdd" onclick="addItem('product3')"">افزودن به سبد</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
